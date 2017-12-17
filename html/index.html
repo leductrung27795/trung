@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container{
+            margin: 0 50px;
+        }
+        #header{
+            background-color: red;
+            height: 50px;
+            width: 100%;
+        }
+        #nav{
+            background-color: coral;
+            height: 20px;
+            width: 100%;
+        }
+        #leftmenu{
+            background-color: gray;
+            height: 400px;
+            width: 30%;
+            float: left;
+            border-right: 5px groove white ;
+        }
+        #main{
+            background-color: green;
+            height: 400px;
+            width: 70%;
+            float: left;
+        }
+        #footer{
+            background-color: aqua;
+            height: 100px;
+            width: 100%;
+            clear: both;
+        }
+        #map{
+            width: 100%;
+            height: 300px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="nav">Nav</div>
+        <div id="leftmenu">Left Menu</div>
+        <div id="main">Main
+            <!--<iframe width="350" height="300" src="https://www.youtube.com/embed/gfIzBvaXiZ0" frameborder="0" allowfullscreen></iframe>-->
+            <audio controls="controls">
+                <source src="anhmo.mp3" type="audio/mp3">
+            </audio>
+            <object width="auto" height="145" data="../file/13_wavewarp.swf"></object>
+            Tôi có lịch hẹn vào lúc <time datetime="11-02-2017"></time>
+        </div>
+        <div id="footer"></div>
+
+    </div>
+
+    <div class="arrowPageUp" id="arrowPageUp">
+        <a href="#" id="back-to-top" title="Về đầu trang" class="show">
+            <canvas id="myCanvas" width="40" height="40" style="border:1px solid #d3d3d3;"></canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(20,20,20,0,2*Math.PI);
+                ctx.fillText("TOP",10,25);
+                ctx.stroke();
+            </script>
+        </a>
+    </div>
+    <!--<div id="map"></div>-->
+    <!--<script>-->
+        <!--function initMap() {-->
+            <!--var mapDiv = document.getElementById('map');-->
+            <!--var map = new google.maps.Map(mapDiv, {-->
+                <!--center: {lat: 16.064938, lng: 108.207995},-->
+                <!--zoom: 8-->
+            <!--});-->
+        <!--}-->
+    <!--</script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxAEqz8fm77KUSvAtNmeNv3Jfj0DTyCNw&callback=initMap" async defer></script>-->
+    <i class="fa fa-cloud">cloud</i>
+    <i class="fa fa-search"></i>
+</body>
+</html>

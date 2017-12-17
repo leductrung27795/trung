@@ -1,0 +1,16 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid red;
+}
+th{
+    border: 1px solid red;
+    background-color: yellow;
+    padding: 10px;
+}
+td{
+    border: 1px solid red;
+    margin: 10px;
+}
+p::first-line{
+    background-color: black;
+}

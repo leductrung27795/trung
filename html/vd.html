@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../bootstrap-3.3.7-dist/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style type="text/css">
+        body {
+            margin-top:0 !important;
+            padding-top:0 !important;
+            /*min-width:800px !important;*/
+        }
+        .wb-autocomplete-suggestions {
+            text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+            position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+        }
+        .wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+        .wb-autocomplete-suggestion b { font-weight: bold; }
+        .wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+        #top-buttom_image {
+            position:fixed;
+            _position:absolute;
+            bottom:5px;
+            right:5px;
+            clip:inherit;
+            _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+            _left:expression(document.documentElement.scrollLeft+ document.documentElement.clientWidth - offsetWidth);
+        }
+    </style>
+</head>
+<body>
+<div class="col-md-9 clearfix hidden-sm hidden-xs">
+    <div id="home-slider" class="owl-carousel owl-theme" style="display: block; opacity: 1;">
+        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4590px; left: 0px; display: block; transition: all 1000ms ease; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 765px;"><div id="gallery_truyenhot"><!--start gallery_truyenhot-->
+            <div class="gallery_row_1">
+                <div class="item_gallery item1">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/chang-trai-may-man/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/uploads/2015/10/UNSET.jpg" alt="Chàng trai may mắn">
+                        <div class="group">
+                            <h5 class="tentruyen">Chàng trai may mắn</h5>
+                            <p class="excerpt">Cậu chuyện về một thằng thảm…</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item_gallery item2">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/one-piece/">
+                        <img src="http://web.archive.org/web/20151227003041im_/https://upload.wikimedia.org/wikipedia/en/6/68/One_Piece_DVD_12.png" alt="One Piece">
+                        <div class="group">
+                            <h5 class="tentruyen">One Piece</h5>
+                            <p class="excerpt">Monkey D. Luffy, 1 cậu bé rất…</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery_row_2">
+                <div class="item_gallery item3">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/giang-ho-hiep-khach/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/uploads/2015/10/Giang-Ho-Hiep-Khach.jpg" alt="Giang Hồ Hiệp Khách">
+                        <div class="group">
+                            <h5 class="tentruyen">Giang Hồ Hiệp Khách</h5>
+                            <p class="excerpt">Câu chuyện xoay quanh nhân vật…</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="gallery_row_3">
+                <div class="item_gallery item4">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/long-than-ky-truyen/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://1.bp.blogspot.com/-BvJqpEka2f4/VdcsYH7DUhI/AAAAAAAAqw8/Mj95B9mdsww/w230/TT8-Long-Than---Trung-Bo-Khuc.jpg" alt="Long Thần kỳ truyện">
+                        <div class="group">
+                            <h5 class="tentruyen">Long Thần kỳ truyện</h5>
+                            <p class="excerpt">Một bộ tuyệt phẩm khác của…</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="item_gallery item5">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/naruto/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/themes/hamtruyen/timthumb.php?src=https://yukimaehwa.files.wordpress.com/2011/07/naruto-shippuden-jan09.jpg?w=213&amp;h=300&amp;h=168&amp;w=237&amp;q=100" alt="Naruto">
+                        <div class="group">
+                            <h5 class="tentruyen">Naruto</h5>
+                            <p class="excerpt">Naruto là một cậu bé có mơ…</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div></div><div class="owl-item" style="width: 765px;"><div id="gallery_truyenhot"><!--start gallery_truyenhot-->
+            <div class="gallery_row_1">
+                <div class="item_gallery item1">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/phong-van-khoi-truyen/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/uploads/2015/10/phongvan.jpg" alt="Phong Vân khởi truyện">
+                        <div class="group">
+                            <h5 class="tentruyen">Phong Vân khởi truyện</h5>
+                            <p class="excerpt"><strong>Khởi truyện "Bất khốc…</strong></p><strong>
+                        </strong></div><strong>
+                    </strong></a><strong>
+                </strong></div><strong>
+                <div class="item_gallery item2">
+                    <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/thien-ha-vo-dich/">
+                        <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/themes/hamtruyen/timthumb.php?src=http://metruyen.org/wp-content/uploads/2015/10/thienha-vodich-1.jpg&amp;h=118&amp;w=354&amp;q=100" alt="Thiên Hạ Vô Địch">
+                        <div class="group">
+                            <h5 class="tentruyen">Thiên Hạ Vô Địch</h5>
+                            <p class="excerpt">Huyền Minh Âm Cơ và Kiếm Tăng…</p>
+                        </div>
+                    </a>
+                </div>
+            </strong></div><strong>
+                <div class="gallery_row_2">
+                    <div class="item_gallery item3">
+                        <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/phong-van-2-than-vo-ky/">
+                            <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/themes/hamtruyen/timthumb.php?src=http://metruyen.org/wp-content/uploads/2015/10/phongvan2-thanvoky.jpg&amp;h=420&amp;w=252&amp;q=100" alt="Phong Vân 2 Thần Võ Kỳ">
+                            <div class="group">
+                                <h5 class="tentruyen">Phong Vân 2 Thần Võ Kỳ</h5>
+                                <p class="excerpt">Từ Tuyết Ẩm Đao và Tuyệt Thế…</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="gallery_row_3">
+                    <div class="item_gallery item4">
+                        <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/nang-macarong/">
+                            <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/uploads/2015/10/Orange71_done-26.jpg" alt="Nàng Macarong">
+                            <div class="group">
+                                <h5 class="tentruyen">Nàng Macarong</h5>
+                                <p class="excerpt">Ma Ri là một ma cà rồng sống…</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="item_gallery item5">
+                        <a href="http://web.archive.org/web/20151227003041/http://metruyen.org/thien-ha-vo-dich-tieu-kiem-tien/">
+                            <img src="http://web.archive.org/web/20151227003041im_/http://metruyen.org/wp-content/uploads/2015/10/thienha-vodich.jpg" alt="Thiên Hạ Vô Địch Tiểu Kiếm Tiên">
+                            <div class="group">
+                                <h5 class="tentruyen">Thiên Hạ Vô Địch Tiểu Kiếm Tiên</h5>
+                                <p class="excerpt">Ngoại truyện nói về thiên hạ…</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </strong></div></div><div class="owl-item" style="width: 765px;"><strong>
+        </strong></div></div></div>
+        <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><span class="glyphicon glyphicon-chevron-left"></span></div><div class="owl-next"><span class="glyphicon glyphicon-chevron-right"></span></div></div></div></div><strong>
+</strong></div>
+
+</body>
+</html>

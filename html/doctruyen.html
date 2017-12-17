@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../bootstrap-3.3.7-dist/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        #main{
+            margin: 0 50px;
+            background: white;
+            position: relative;
+        }
+        #main ul{
+            list-style-type: none ;
+            text-align: left;
+            margin: 0px 5px;
+        }
+        #main li{
+            color: black;
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+        }
+        img{
+            border-radius: 10px;
+        }
+        #top-buttom_image{
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            font-size: 15px;
+        }
+        #footer{
+            position: relative;
+            background: black;
+            color: white;
+
+        }
+        #map{
+            padding: 0 0;
+            width: 100%;
+            height: 80px;
+            float: left;
+        }
+    </style>
+</head>
+<body style="background-color: #BCBDBF;">
+<div class="bs-example">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-family: 'Nothing You Could Do', cursive;font-size: 25px; color: white">TRUYỆN TRANH</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Thể loại<span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <!--<li><a data-target="#myModal">Page 1-1</a></li>-->
+                    <!--<li><a href="#">Page 1-2</a></li>-->
+                    <!--<li><a href="#">Page 1-3</a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                    <li><a href="#truyenmoi">Truyện mới</a></li>
+                    <li><a href="#truyenhot">Truyện hot</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right" style="position: static; z-index: 11;">
+                    <!--<li><a href="#"><span class="glyphicon glyphicon glyphicon-user"></span> Tài khoản</a></li>-->
+                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon glyphicon-user"></span> Tài khoản</a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal2" style="width: 120px;height: 40px; position: relative;top: 5px">
+                        Đăng nhập</button>
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <d style="color: blue;font-family: 'Poppins', sans-serif;font-size: 35px"><span class="glyphicon glyphicon-user"></span> ĐĂNG NHẬP</d>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword">Mật khẩu</label>
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox">Lưu tài khoản</label>
+                                            <label><a href="#" style="color: black;">Quên mật khẩu</a> </label>
+                                        </div>
+                                    </form>
+                                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="form.html" target="_blank" button type="submit" class="btn btn-primary">Đăng kí</a></button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<li><a href="#">Page 1-2</a></li>-->
+                </ul>
+                </li>
+                </ul><!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="main">
+    <div class="row">
+        <div class="col-md-9">
+            <script>
+                $(document).ready(function(){
+                    $("#hide").click(function(){
+                        $("h5").hide();
+                    });
+                    $("#show").click(function(){
+                        $("h5").show();
+                    });
+                });
+            </script>
+            <br>
+            <ul>
+                <li><a href="#">Truyện thể thao</a> >> </li>
+                <li><a href="#">Itto</a></li>
+            </ul>
+            <p style="color: black; font-size: 25px; text-align: center">TRUYỆN ITTO</p>
+            <p style="text-align: center;color: black;font-size: 13px;line-height: 1.5px">[Cập nhật ngày 18/11/2017]</p>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="../img/183.jpg" style="width: 100%; height: 350px;margin: 0px 5px">
+                </div>
+                <div class="col-md-7">
+                    <p><span class="glyphicon glyphicon-user"></span> Tác giả: Motoki Monma</p>
+                    <p><span class="glyphicon glyphicon-signal"></span> Tình trạng: Đang cập nhật</p>
+                    <p><span class="glyphicon glyphicon-eye-open"></span> Lượt xem: 1.034.345</p>
+                    Itto - Sóng gió cầu trường là bộ Itto sang Brazin để học đá bóng.
+                        Nhưng nhiều tình tiết chết cười đã xảy ra làm Itto đành ở lại Nhật và vào trường Meiho
+                        Học dốt quá không đủ điểm để vào trường Seiga cấp 3, chỉ có mỗi trường Meiho ở 1 tỉnh lẻ xa lắc nào đó mời Itto vào nhập học và đá bóng. ừa quê xệ, vừa coi thường trường này nên Itto quyết định theo bố dzông qua Brazil : vừa để học đá bóng, vừa để hai bố con tiện đường làm ăn lừa đảo.
+                        <h5>Nhưng các bạn còn lạ gì Itto, vừa ra sân bay đã ẩu đả tè le, kết quả : TRỄ CHUYẾN BAY!!  Nên đành ở lại Nhật (chắc ko còn tiền mua thêm vé máy bay đi chuyến khác)
+                        Cuối cùng đành nhập học ở trường cấp 3 Meiho, tại đây hắn kết bè với hai tên khác : Nedu tóc đỏ - đầu gấu , và Hanyu cao kều - ngây ngô - cẳng gỗ - chân sút phá hoại</h5>
+                    <br>
+                    <a id="show" style="color: blue">Thêm</a> <a id="hide" style="color: blue">Thu gọn</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="float: left">
+            <span class="glyphicon glyphicon-book" style="font-size: 18px"></span>  <d style="font-family: 'Oswald',sans-serif;font-size: 18px;">Truyện xem nhiều</d>
+            <div class="list-group">
+                <a href="#" class="list-group-item ">Conan</a>
+                <a href="#" class="list-group-item">Dragon Ball</a>
+                <a href="#" class="list-group-item">Hunter</a>
+                <a href="#" class="list-group-item">Doraemon</a>
+                <a href="#" class="list-group-item">Thần đồng đất việt</a>
+                <a href="#" class="list-group-item">Inuyasha</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="list-title" style="margin: 0px 5px">
+                <i class="glyphicon glyphicon-list"></i> Nội dung
+            </h3>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container" style="width: 100%">
+                <table class="table">
+                    <thead style="text-align: center">
+                    <tr>
+                        <th>Số tập</th>
+                        <th>Cập nhật</th>
+                        <th>Lượt xem</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="http://localhost:63342/trung/html/turnjs.html?_ijt=vuer9pomgc6ilifgkdnfos94jr" style="color: black">Tập 1</a></td>
+                        <td>10/10/2017</td>
+                        <td> 12.332</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" style="color: black">Tập 2</a></td>
+                        <td>30/10/2017</td>
+                        <td>10.232</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" style="color: black">Tập 3</a></td>
+                        <td>18/11/2017</td>
+                        <td>2.234</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 16.064938, lng: 108.207995},
+                    zoom: 8
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxAEqz8fm77KUSvAtNmeNv3Jfj0DTyCNw&callback=initMap" async defer></script>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="gioithieu">
+                    <br>
+                    <p>Tất cả các truyện trên site đều được đọc giả sưu tầm từ các nguồn trên mạng, chúng tôi không chịu bất cứ trách nhiệm nào về vấn đề bản quyền tác giả</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="lienhe" style="position: relative;left: 10px">
+                    <ul>
+                        <p style="font-size: 20px">Liên hệ</p>
+                        <li>Lê Đức Trung</li>
+                        <li>0941470795</li>
+                        <li>leductrung@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="lienket">
+                    <ul>
+                        <p style="font-size: 20px"> Liên kết</p>
+                        <li>Facebook</li>
+                        <li>Tumblr</li>
+                        <li>Wattpad</li>
+                        <li>Wordpress</li>
+                        <li>Copyright@2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type='text/javascript'>
+    var maxWidth = (document.body.clientWidth);
+    var maxHeight = (document.body.clientHeight);
+</script>
+<div id='top-buttom_image'>
+    <a href='javascript:top.window.scrollTo(0,0)' title='Lên đầu trang'><span class="glyphicon glyphicon-arrow-up" style="color: black"></span></a><br/>
+    <a href='javascript:window.scrollTo(0,250)' title='Vào giữa trang'><span class="glyphicon glyphicon-align-justify" style="color: black"></span></a><br/>
+    <a href='javascript:window.scrollTo(0,999999)' title='Xuống cuối trang'><span class="glyphicon glyphicon-arrow-down" style="color: black"></span></a>
+</div>
+</body>
+</html>

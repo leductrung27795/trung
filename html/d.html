@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        font-family: sans-serif;
+        color: #333;
+    }
+
+
+    #login ul {
+        background: #1F568B;
+        list-style-type: none;
+        text-align: center;
+        width: 120px;
+    }
+    #login li {
+        color: #f1f1f1;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+    }
+    #login a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    #login a:hover {
+        background: #F1F1F1;
+        color: #333;
+    }
+
+
+    .sub-menu2 {
+        display: none;
+        position: absolute;
+    }
+    #login li {
+        position: relative;
+    }
+    #login li:hover .sub-menu2 {
+        display: block;
+    }
+    .sub-menu2 li {
+          margin-left: 0 !important;
+    }
+
+
+    .sub-menu2 > ul {
+        display: none !important;
+    }
+</style>
+<body>
+<div id="login">
+    <ul>
+        <li><a href="#">Tài khoản</a>
+            <ul class="sub-menu2">
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Hosting</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

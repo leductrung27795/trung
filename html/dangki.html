@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            position: relative;
+            left: 420px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: red;
+            width: 210px;
+            height: 420px;
+        }
+        form a{
+            position: relative;
+            left: 40px;
+        }
+        table{
+            position: relative;
+            left: 20px;
+        }
+        h1{
+            position: relative;
+            left: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>ĐĂNG KÝ</h1>
+        <table>
+            <tr>
+                <th>FirstName<br></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="firstname" maxlength="10"><br></td>
+            </tr>
+            <tr>
+                <th>LastName<br></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="lastname" maxlength="20"><br></td>
+            </tr>
+            <tr>
+                <th>Email<br></th>
+            </tr>
+            <tr>
+                <td><input type="email" name="email"><br></td>
+            </tr>
+            <tr>
+                <th>Gender<br></th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gt" value="male" checked> Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gt" value="female"> Female</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gt" value="other"> Other</td>
+            </tr>
+            <tr>
+                <th>Password<br></th>
+            </tr>
+            <tr>
+                <td><input type="password" name="password"></td>
+            </tr>
+        </table>
+        <br>
+        <a>
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Tạo lại">
+        </a>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+table, th, td {
+    border: 10px black;
+    border-collapse: collapse;
+}
+table{
+    width:auto;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th{
+    background-color: red;
+    color: aqua;
+}
+td{
+    background-color: red;
+    color: aqua;
+}

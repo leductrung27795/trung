@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background-color: red;
+    height: 80px;
+    width: 100%;
+    border-bottom: 5px inset red;
+    border-right: 5px inset #dddddd;
+    border-left: 5px inset #dddddd;
+}
+#menu{
+    background-color: #008CBA;
+    height: 100px;
+    width: 100%;
+}
+#main{
+    background-color: aliceblue;
+    height: 500px;
+    width: 75%;
+    float: left;
+    border-right: 5px inset #ADD8E6;
+    background: url("http://d26wdt9dxddkfy.cloudfront.net/wp-content/uploads/2013/10/ideas.jpg");
+}
+#sidebar{
+    background-color: aliceblue;
+    height: 500px;
+    width: 25%;
+    padding-left: 25px;
+    float: left;
+}
+#footer{
+    background-color: #dddddd;
+    height: 220px;
+    width: 100%;
+    bottom: 0px;
+    clear: both;
+}
+input{
+  position: relative;
+  right: -150px;
+  width: 200px;
+}
+button{
+  position: relative;
+  right: -150px;
+}
+dd{
+    position: relative;
+    left: -5px;
+}
+div.gallery{
+    right: -200px;
+    float: left;
+    width: auto;
+    margin: 8px;
+    padding: 20px;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+}
+div.main1 p{
+    color: white;
+    padding: 50px;
+    float: none;
+}
+div.main2 p{
+    color: blue;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+div.gallery img{
+    align-items: center;
+}
+div.gioithieu{
+    height: 220px;
+    width: 30%;
+    float: left;
+    border-left: 1px inset black ;
+    border-right: 1px inset black ;
+    padding-left: 20px;
+}
+div.lienket{
+    height: 250px;
+    width: 35%;
+    float: left;
+    padding-left: 30px;
+    color: #1F568B;
+}
+div.lienhe{
+    height: 250px;
+    width: 35%;
+    float: left;
+    padding-left: 30px;
+}
+#menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+}
+#menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    text-align: center;
+    position: relative;
+}
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+#menu a:hover {
+    background: #F1F1F1;
+    color: #333;
+}
+#menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+.sub-menu li {
+    margin-left: 0 !important;
+}
+.sub-menu > ul {
+    display: none !important;
+}
+#sidebar b{
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/tr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body background="../file/14.jpg">
+    <div id="container">
+        <header>
+            <object width="100%" height="145" data="../file/mat-troi-06.swf"></object>
+        </header>
+        <div id="header">
+                <canvas id="myCanvas" width="150" height="45" style="border:1px solid #d3d3d3;"></canvas>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+//                    gradient.addColorStop("0", "magenta");
+//                    gradient.addColorStop("0.5", "blue");
+                    gradient.addColorStop("1.0", "magenta");
+                    ctx.font = "45px Arial";
+                    ctx.fillStyle = gradient;
+                    ctx.fillText("WEB", 20, 40)
+                </script>
+            <dd>
+                <span style="color: red;font-weight: bold">TRUYỆN</span> <span style="color: yellow;font-weight: bold">TRANH</span></dd>
+            <input style="float: none" type="text" placeholder="nhập tên truyện cần tìm kiếm ...">
+            <button name="button" type="button" onclick="tim();"><i class="fa fa-search"></i> </button>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thể loại</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Ngôn tình</a></li>
+                        <li><a href="#">Kiếm hiệp</a></li>
+                        <li><a href="#">Tình cảm</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Truyện yêu thích</a></li>
+                <li><a href="#">Truyện mới</a></li>
+                <li><a href="#">Tài khoản</a>
+                    <ul class="sub-menu">
+                        <li><a href="http://localhost:63342/trung/html/dangnhap.html?_ijt=opgje42oo0hs4lubkfh0ss9t9e">Đăng nhập</a></li>
+                        <li><a href="http://localhost:63342/trung/html/dangki.html?_ijt=opgje42oo0hs4lubkfh0ss9t9e">Đăng kí</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="main1">
+            <h1><a style="font-size: 25px">Truyện xem nhiều</a></h1>
+            <div class="gallery" align="center" >
+                <a target="_blank" href="http://truyentranhonline.vn/wp-content/uploads/2015/07/Conan.png">
+                    <img src="http://truyentranhonline.vn/wp-content/uploads/2015/07/Conan.png" alt="Trolltunga Norway" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Conan</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="http://stuffpoint.com/doraemon/image/203761-doraemon-with-nobita.jpg">
+                    <img src="http://stuffpoint.com/doraemon/image/203761-doraemon-with-nobita.jpg" alt="Forest" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Doraemon</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/M/MV5BMjRlYTYyMDUtOGY5MC00MmFiLTljOTMtM2QzOWZjMWViN2FiL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY1200_CR123,0,630,1200_AL_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjRlYTYyMDUtOGY5MC00MmFiLTljOTMtM2QzOWZjMWViN2FiL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY1200_CR123,0,630,1200_AL_.jpg" alt="Northern Lights" width="100" height="100">
+                </a>
+                <div class="desc">DragonBall</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="https://i.pinimg.com/originals/1a/aa/7a/1aaa7af88fccfde0b2173c4135f72551.jpg">
+                    <img src="https://i.pinimg.com/originals/1a/aa/7a/1aaa7af88fccfde0b2173c4135f72551.jpg" alt="Mountains" width="100" height="100">
+                </a>
+                <div class="desc">Truyện X-Hunter</div>
+            </div>
+            <div class="gallery" align="center" >
+                <a target="_blank" href="https://vignette.wikia.nocookie.net/yugioh/images/1/1c/YSYR-DeckEN-Ver2.png/revision/latest/scale-to-width-down/350?cb=20140124020220">
+                    <img src="https://vignette.wikia.nocookie.net/yugioh/images/1/1c/YSYR-DeckEN-Ver2.png/revision/latest/scale-to-width-down/350?cb=20140124020220" alt="Trolltunga Norway" width="100" height="100">
+                </a>
+                <div class="desc">Truyện YuGiOh</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="https://ibhuluimcom-a.akamaihd.net/ib.huluim.com/show/1304?region=US&size=952x536">
+                    <img src="https://ibhuluimcom-a.akamaihd.net/ib.huluim.com/show/1304?region=US&size=952x536" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Naruto</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="http://media.vietq.vn/files/thn_ng_t_vit.jpg">
+                    <img src="http://media.vietq.vn/files/thn_ng_t_vit.jpg" alt="Northern Lights" width="100" height="100">
+                </a>
+                <div class="desc">Thần đồng đất việt</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="http://ndl.mgccw.com/mu3/app/20141217/14/1418805350362/ss/6_small.png">
+                    <img src="http://ndl.mgccw.com/mu3/app/20141217/14/1418805350362/ss/6_small.png" alt="Mountains" width="100" height="100">
+                </a>
+                <div class="desc">Truyện X-Hunter</div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+        <div id="sidebar">
+            <ol>
+                <p>Thể loại đọc nhiều</p>
+                <li><a href="#">Ngôn tình</a></li>
+                <li><a href="#">Kiếm hiệp</a></li>
+                <li><a href="#">Truyện teen</a></li>
+                <li><a href="#">Truyện ma</a></li>
+                <li><a href="#">Truyện tiểu thuyết</a></li>
+                <li><a href="#">Truyện lịch sử</a></li>
+                <li><a href="#">Truyện trinh thám</a></li>
+            </ol>
+
+        </div>
+        <div id="main2">
+            <h2><a style="font-size: 25px">Truyện đề cử</a></h2>
+            <div class="gallery" align="center" >
+                <a target="_blank" href="http://static.gamehub.vn/img/files/2015/11/30/gamehubvn-sieu-pham-gmo-phong-van-mobile-chinh-thuc-close-beta-vao-ngay-03-12-20156.png">
+                    <img src="http://static.gamehub.vn/img/files/2015/11/30/gamehubvn-sieu-pham-gmo-phong-van-mobile-chinh-thuc-close-beta-vao-ngay-03-12-20156.png" alt="Trolltunga Norway" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Phong Vân</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="http://2.bp.blogspot.com/-YIBtn7kF4QA/UaojPHdTbDI/AAAAAAADWds/mxMs42-ChPE/s0/183.jpg">
+                    <img src="http://2.bp.blogspot.com/-YIBtn7kF4QA/UaojPHdTbDI/AAAAAAADWds/mxMs42-ChPE/s0/183.jpg" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Itto</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="http://image.phimmoi.net/film/4337/preview.medium.jpg?_v=1495954982">
+                    <img src="http://image.phimmoi.net/film/4337/preview.medium.jpg?_v=1495954982" alt="Northern Lights" width="100" height="100">
+                </a>
+                <div class="desc">Kết giới sư</div>
+            </div>
+
+            <div class="gallery" align="center">
+                <a target="_blank" href="https://ibhuluimcom-a.akamaihd.net/ib.huluim.com/show/2324?region=US&size=952x536">
+                    <img src="https://ibhuluimcom-a.akamaihd.net/ib.huluim.com/show/2324?region=US&size=952x536" width="100" height="100">
+                </a>
+                <div class="desc">Truyện Inuyasha</div>
+            </div>
+        </div>
+        <div id="ifram">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/FQHN83D0Ido" frameborder="0" allowfullscreen style="width: 400px; height: 250px"></iframe>
+            <audio controls>
+                <source src="../file/tuyam.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div id="map"></div>
+            <script>
+                function initMap() {
+                    var mapDiv = document.getElementById('map');
+                    var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 16.064938, lng: 108.207995},
+                        zoom: 8
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxAEqz8fm77KUSvAtNmeNv3Jfj0DTyCNw&callback=initMap" async defer></script>
+
+        <div id="footer">
+            <div class="lienhe">
+                <ul>
+                    <p><a style="font-size: 20px">Liên hệ</a></p>
+                    <li>Lê Đức Trung</li>
+                    <li>0941470795</li>
+                    <li>leductrung@gmail.com</li>
+                </ul>
+            </div>
+            <div class="gioithieu">
+                <p>Tất cả các truyện trên site đều được đọc giả sưu tầm từ các nguồn trên mạng, chúng tôi không chịu bất cứ trách nhiệm nào về vấn đề bản quyền tác giả</p>
+                <p>Nếu các bạn đọc truyện nào thấy có nội dung liên quan đến vấn đề chính trị hoặc có nội dung không lành mạnh vui lòng liên hệ để chúng tôi xóa bỏ truyện khỏi trang web. Chân thành cảm ơn</p>
+            </div>
+            <div class="lienket">
+                <ul>
+                    <p><a style="font-size: 20px"> Liên kết</a></p>
+                    <li>Facebook</li>
+                    <li>Tumblr</li>
+                    <li>Wattpad</li>
+                    <li>Wordpress</li>
+                    <li>Copyright@2017</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="arrowPageUp">
+        <a href="#" id="back-to-top" title="Về đầu trang" class="show">
+            <svg width="70" height="70">
+                <circle cx="40" cy="40" r="25"
+                        stroke="#777777" stroke-width="4" fill="white" />
+                <text fill="black" font-size="20" font-family="Verdana" x="22" y="48">TOP</text>
+            </svg></a>
+    </div>
+</body>
+</html>

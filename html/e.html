@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #menu{
+            width: 70%;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+        #menu li
+        {
+            position:relative;
+            display:inline-block;
+            width:100%;
+        }
+        #menu li ul
+        {
+            position:absolute;
+            display:none;
+            list-style: none;
+        }
+        #menu li:hover ul
+        {
+            display:block;
+        }
+        #menu a
+        {
+            display:block;
+            color:#fff;
+            background:#606c88;
+        }
+    </style>
+<body>
+    <div id="menu">
+        <ul>
+           <li>
+               <a href="#">Thể loại</a>
+                <ul>
+                   <li><a href="#">Kiếm hiệp</a> </li>
+                   <li><a href="#">Ngôn tình</a> </li>
+                   <li><a href="#">Tình cảm</a> </li>
+                </ul>
+           </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
